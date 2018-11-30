@@ -6,10 +6,10 @@ nested = require('postcss-nested'),
 cssImport = require('postcss-import');
 
 gulp.task('styles', function() {
-  return gulp.src('./app/assets/styles/styles.class')
+  return gulp.src('./app/assets/styles/styles.css')
   .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
   .on('error', function(errorInfo) {
-    console.log('TEST');c
+    console.log('TEST');
     this.emit('end');
   })
   .pipe(gulp.dest('./app/temp/styles/'));
