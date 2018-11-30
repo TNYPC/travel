@@ -2,7 +2,7 @@
   position: relative;
 
   &__text-content {
-    color: $doesNotxit;
+    color: $dNot;
     position: absolute;
     top:50%;
     transform: translateY(-50%);
