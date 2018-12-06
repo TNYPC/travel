@@ -1,0 +1,5 @@
+@define-mixin atSmall {
+  @media (min-wdth: 530px) {
+    @mixin-content;
+  }
+}
