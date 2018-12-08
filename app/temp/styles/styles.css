@@ -521,6 +521,20 @@ img {
   }
   }
 
+@media (min-width: 800px) {
+
+.large-hero__subtitle {
+      font-size: 3.2rem
+  }
+  }
+
+@media (min-wdth: 1200px) {
+
+.large-hero__subtitle {
+      font-size: 4.8rem
+  }
+  }
+
 .large-hero__description {
     font-weight: 300;
     color: #FFF;
@@ -530,6 +544,27 @@ img {
     max-width: 30rem;
     margin-left: auto;
     margin-right:auto;
+  }
+
+@media (min-wdth: 530px) {
+
+.large-hero {
+    font-size: 2.9rem
+}
+  }
+
+@media (min-width: 800px) {
+
+.large-hero {
+    font-size: 3.2rem
+}
+  }
+
+@media (min-wdth: 1200px) {
+
+.large-hero {
+    font-size: 4.8rem
+}
   }
 
 .btn {
