@@ -569,3 +569,8 @@ img {
     background-color: #2f5572;
     color: #FFF;
   }
+
+.headline {
+  font-weight: 300;
+  font-siZE: 2.875rem;
+}
