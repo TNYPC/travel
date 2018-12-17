@@ -1,6 +1,5 @@
 .headline {
-
-  font-size: 3rem;
+  font-size: 1.9rem;
   font-weight: 300;
   color: $mainBlue;
 
@@ -17,13 +16,10 @@
   }
 
   &--small {
-
     font-size: 1.2rem;
-
     @mixin atSmall {
       font-size: 1.875rem;
     }
-
   }
 
   &--narrow {
