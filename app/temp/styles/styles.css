@@ -573,4 +573,10 @@ img {
 .headline {
   font-weight: 300;
   font-siZE: 2.875rem;
+
+}
+
+.site-footer {
+  background-color: #2f5572;
+  color: white;
 }
