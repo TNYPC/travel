@@ -2,15 +2,13 @@
 
 /**
  * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 
 html {
   font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -258,7 +256,6 @@ hr {
 
 button,
 input,
-optgroup,
 select,
 textarea {
   font: inherit; /* 1 */
@@ -453,7 +450,8 @@ a {
   padding-top: 88px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
   width: 100%;
   text-align: center;
@@ -700,28 +698,6 @@ a {
   margin-top: 0;
 }
 
-.site-footer {
-  background-color: #2f5572;
-  color: #FFF;
-  padding: .5rem;
-  text-align: center;
-}
-
-.site-footer__text {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: 200;
-}
-
-@media (min-width: 800px) {
-
-  .site-footer__text {
-    display: inline;
-    margin-bottom: 0;
-    margin-right: 1.4rem;
-  }
-}
-
 .row::after {
   content: "";
   clear: both;
@@ -825,6 +801,8 @@ a {
 @media (min-width: 800px) {
 
   .row--equal-height-at-medium {
+    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -832,6 +810,8 @@ a {
 
 .row--equal-height-at-medium > div {
   float: none;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -839,6 +819,8 @@ a {
 @media (min-width: 1010px) {
 
   .row--equal-height-at-large {
+    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -846,6 +828,8 @@ a {
 
 .row--equal-height-at-large > div {
   float: none;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -999,7 +983,7 @@ a {
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-e7ff6e9a.svg');
+      background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
     }
 
 .icon--clear-view-escapes {
@@ -1011,68 +995,90 @@ Instead edit gulp/templates/sprite */
 .icon--comment {
     width: 64px;
     height: 64px;
-    background-position: 0 48.00806451612903%;
+    background-position: 99.70443349753694% 0;
   }
 
 .icon--facebook {
     width: 21.23px;
     height: 42.01px;
-    background-position: 86.80657778525466% 28.810192478936912%;
+    background-position: 26.040607071652357% 45.795830448496034%;
   }
 
 .icon--fire {
     width: 56px;
     height: 64px;
-    background-position: 31.527093596059114% 48.00806451612903%;
+    background-position: 0 99.56481481481481%;
   }
 
 .icon--globe {
     width: 64px;
     height: 64px;
-    background-position: 73.02564102564102% 0;
+    background-position: 27.586206896551722% 99.56481481481481%;
   }
 
 .icon--instagram {
     width: 42.01px;
     height: 42.01px;
-    background-position: 95.11959076455136% 57.58613603671484%;
+    background-position: 63.2917018534157% 49.234556504346486%;
   }
 
 .icon--mail {
     width: 64px;
     height: 48px;
-    background-position: 73.02564102564102% 45.714285714285715%;
+    background-position: 0 48.00806451612903%;
   }
 
 .icon--rain {
     width: 64px;
     height: 64px;
-    background-position: 0 99.62096774193549%;
+    background-position: 99.70443349753694% 59.25925925925926%;
   }
 
 .icon--star {
     width: 64px;
     height: 64px;
-    background-position: 32.82051282051282% 99.62096774193549%;
+    background-position: 59.11330049261084% 99.56481481481481%;
   }
 
 .icon--twitter {
     width: 51.78px;
     height: 42.06px;
-    background-position: 99.60428530064665% 0;
+    background-position: 94.04330452560171% 98.50700323226104%;
   }
 
 .icon--wifi {
     width: 60px;
     height: 64px;
-    background-position: 64.321608040201% 99.62096774193549%;
+    background-position: 68.79227053140097% 0;
   }
 
 .icon--youtube {
     width: 34.75px;
     height: 42px;
-    background-position: 92.04013377926421% 86.35616438356163%;
+    background-position: 36.69752421959096% 45.792307692307695%;
   }
+
+.site-footer {
+  background-color: #2f5572;
+  color: #FFF;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.site-footer__text {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+@media (min-width: 800px) {
+
+  .site-footer__text {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 1.4rem;
+  }
+}
 
 .site-header {
   padding: 10px 0;
@@ -1092,6 +1098,31 @@ Instead edit gulp/templates/sprite */
   float: right;
 }
 
+.site-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(.8);
+          transform: translateX(-50%) scale(.8);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  background-color: #2f5572;
+  padding: 25px 36px;
+}
+
+@media (min-width: 800px) {
+
+  .site-header__logo {
+    left: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.site-header__logo__graphic {
+  text-indent: -9999px;
+}
+
 .site-header__menu-icon {
   width: 20px;
   height: 20px;
@@ -1108,28 +1139,6 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.site-header__logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) scale(.8);
-  transform-origin: 50% 0;
-  background-color: #2f5572;
-  padding: 25px 36px;
-}
-
-@media (min-width: 800px) {
-
-  .site-header__logo {
-    left: auto;
-    transform: translateX(0);
-  }
-}
-
-.site-header__logo__graphic {
-  text-indent: -9999px;
-}
-
 .site-header__menu-content {
   display: none;
 }
@@ -1141,6 +1150,10 @@ Instead edit gulp/templates/sprite */
   }
 }
 
+.site-header__menu-content--is-visible {
+  display: block;
+}
+
 .primary-nav--pull-right {
   float: right;
 }
@@ -1148,8 +1161,12 @@ Instead edit gulp/templates/sprite */
 .primary-nav ul {
   margin: 0;
   padding: 0;
+}
 
-  @mixins clearFix;
+.primary-nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .primary-nav li {
@@ -1160,7 +1177,8 @@ Instead edit gulp/templates/sprite */
 
 .primary-nav a {
   color: #FFF;
-  text-decoration: none;
   font-weight: 300;
-  padding: 6px 0;
+  text-decoration: none;
+  display: block;
+  padding: 12px 0;
 }
