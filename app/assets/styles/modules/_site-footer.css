@@ -1,4 +1,8 @@
 .site-footer {
   background-color: $mainBlue;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #FFF;
+>>>>>>> footer
 }
