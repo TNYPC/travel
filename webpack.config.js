@@ -1,7 +1,7 @@
 module.exports = {
   entry: "./app/assets/scripts/App.js",
   output: {
-    path: "C:/Users/erick/Git/travel/app/temp/scripts",
+    path: "./app/temp/scripts",
     filename: "App.js"
   },
   module: {

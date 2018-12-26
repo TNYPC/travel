@@ -1,9 +1,9 @@
-import $ from "jquery";
-
 import MobileMenu from './modules/MobileMenu';
-import ReavealOnScroll from './modules/RevealOnScoll';
+import RevealOnScroll from './modules/RevealOnScroll';
+import $ from 'jquery';
+import StickyHeader from './modules/StickyHeader';
 
 var mobileMenu = new MobileMenu();
-
-new RevealOnScoll($(".feature-item"),"85%");
-new RevealOnScoll($(".testimonial"),"60%");
+new RevealOnScroll($(".feature-item"), "85%");
+new RevealOnScroll($(".testimonial"), "60%");
+var stickyHeader = new StickyHeader();
