@@ -643,13 +643,24 @@ a {
 .headline {
   font-size: 1.9rem;
   font-weight: 300;
+<<<<<<< HEAD
   color: #2f5572;
 }
 
 @media (min-width: 530px) {
 
+<<<<<<< HEAD
+.headline {
+    font-size: 2.875rem
+=======
+  font-siZE: 2.875rem;
+
+>>>>>>> footer
+}
+=======
   .headline {
     font-size: 2.875rem;
+>>>>>>> f1a19ac7242b536e345cc3efdf1c178228c0bfd5
   }
 }
 
